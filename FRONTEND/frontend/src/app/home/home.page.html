@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Welcome!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+      <h2> Login </h2>
+      <ion-input placeholder="Email" [(ngModel)]="emailInput"> </ion-input>
+      <ion-input placeholder="Password" [(ngModel)]="passwordInput"> </ion-input>
+      <div>
+        <p>{{this.messageFromBackend}}</p>
+      </div>
+      <ion-button (click)="checkLogin()">Login</ion-button>
+      <ion-button (click)="navToRegistration()">Register</ion-button>
+  </div>
+</ion-content>

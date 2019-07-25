@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div text-center>
+    <ion-list *ngFor="let listing of listings">
+      <ion-item>
+        {{listing.title}}
+        <br>
+         <ion-button (click)="navToBookings()">Book</ion-button> 
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
+
+
+

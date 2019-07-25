@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bookings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div text-center>
+      <ion-list *ngFor="let booking of bookings">
+        <ion-item>
+          {{booking.title}}
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
